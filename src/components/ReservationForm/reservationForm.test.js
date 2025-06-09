@@ -48,8 +48,6 @@ describe('ReservationForm Component', () => {
         render(<ReservationForm />);
 
         const phoneInput = screen.getByLabelText(/Phone Number/i);
-
-        // Wait for the input to stabilize if it’s using a mask
         await userEvent.clear(phoneInput);
         await userEvent.type(phoneInput, '(123) 456-7890');
 

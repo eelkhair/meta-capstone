@@ -1,5 +1,6 @@
 import img from '../../assets/restauranfood.jpg';
 import './Hero.css';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
     return (
@@ -14,12 +15,14 @@ export default function Hero() {
                             focused on traditional recipes served with a modern
                             twist.
                         </p>
-                        <button
+                        <Link
+                            to="/reservations"
                             className="reserve-btn"
                             data-testid="reserve-button"
                         >
+                            {' '}
                             Reserve a Table
-                        </button>
+                        </Link>
                     </div>
 
                     <div

@@ -54,7 +54,8 @@
     transition: background-color 0.3s ease;
     margin: 0;
     font-size: 1.2rem;
-    width: 200px;
+    width: 180px;
+    text-decoration: none;
 }
 
 .reserve-btn:hover {

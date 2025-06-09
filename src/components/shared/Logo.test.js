@@ -2,7 +2,6 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Logo from './Logo';
 
-// Mock image import
 jest.mock('../../assets/Logo.svg', () => 'logo.svg');
 
 describe('Logo Component', () => {

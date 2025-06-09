@@ -29,9 +29,9 @@ export default function SpecialsCard({ card }) {
 
 SpecialsCard.propTypes = {
     card: PropTypes.shape({
-        image: PropTypes.string.isRequired, // 'image' should be a required string
-        title: PropTypes.string.isRequired, // 'title' should be a required string
-        description: PropTypes.string.isRequired, // 'description' should be a required string
-        price: PropTypes.number.isRequired, // 'price' should be a required number
-    }).isRequired, // 'card' object itself is required
+        image: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        price: PropTypes.number.isRequired,
+    }).isRequired,
 };
