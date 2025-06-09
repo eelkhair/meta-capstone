@@ -1,0 +1,135 @@
+.hero {
+    background-color: #495e57;
+    padding: 2rem 0 1.5rem;
+    overflow: visible;
+    max-height: 400px;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 6rem;
+}
+
+.hero-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.hero-text {
+    max-width: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    color: #f4ce14;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.hero-text h2 {
+    font-size: 1.4rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.reserve-btn {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    background-color: #f4ce14;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0;
+    font-size: 1.2rem;
+    width: 200px;
+}
+
+.reserve-btn:hover {
+    background-color: #e2ba0f;
+}
+
+.hero-image-wrapper {
+    flex-shrink: 0;
+    transform: translateY(0%);
+    z-index: 1;
+}
+
+.hero-image-wrapper img {
+    width: 260px;
+    max-height: 520px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        max-height: unset;
+    }
+
+    .hero-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        align-items: center;
+    }
+
+    .hero-image-wrapper {
+        transform: none;
+        margin-top: 2rem;
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    .hero-image-wrapper img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hero {
+        max-height: unset;
+    }
+
+    .hero-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        align-items: center;
+    }
+
+    .hero-image-wrapper {
+        transform: translateY(10%);
+        margin-top: 2rem;
+        max-width: 320px;
+    }
+
+    .hero-image-wrapper img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}

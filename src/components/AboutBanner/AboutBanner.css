@@ -1,0 +1,80 @@
+.about-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 1rem;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+    padding-right: 50px;
+}
+
+.about-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.about-images {
+    position: relative;
+    flex: 1;
+    min-width: 320px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-images .img-top {
+    width: 80%;
+    border-radius: 16px;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-images .img-bottom {
+    position: absolute;
+    bottom: -60px;
+    left: -40px;
+    width: 70%;
+    border-radius: 16px;
+    z-index: 1;
+    opacity: 0.8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .about-text {
+        padding-left: 25px;
+        margin: auto;
+    }
+    .about-images {
+        margin-left: 75px;
+    }
+    .about-banner h1,
+    .about-banner h2 {
+        text-align: center;
+    }
+}

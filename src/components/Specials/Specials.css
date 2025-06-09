@@ -1,0 +1,117 @@
+/* Menu Description Section */
+.menu-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Title Styling */
+.menu-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+}
+
+/* Button Styling */
+.specials-menu-btn {
+    background: #f4ce14;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.specials-menu-btn:hover {
+    background-color: #e2ba0f;
+}
+
+/* Cards Container */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* Single Card Styling */
+
+.card {
+    flex: 1 1 calc(29% - 20px);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #edefee;
+    padding-bottom: 10px;
+    max-width: 400px;
+    font-size: 1.2em;
+}
+
+.card img {
+    height: 250px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Name and Price Container */
+
+.name-price {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 0 15px;
+}
+
+.item-name,
+.item-price {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.item-price {
+    color: #ee9972;
+}
+
+/* Item Description */
+
+.item-desc {
+    font-size: 0.9em;
+    color: #666;
+    margin: 10px 0;
+    padding: 0 15px;
+    min-height: 80px;
+}
+
+/* Delivery Section */
+
+.delivery {
+    bottom: 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+        margin: 10px auto auto;
+        min-width: 200px;
+    }
+
+    .menu-desc {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .menu-title,
+    .btn {
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero Component Tests matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="hero"
+    data-testid="hero"
+  >
+    <div
+      class="container"
+      data-testid="container"
+    >
+      <div
+        class="hero-inner"
+        data-testid="hero-inner"
+      >
+        <div
+          class="hero-text"
+          data-testid="hero-text"
+        >
+          <h1>
+            Little Lemon
+          </h1>
+          <h2>
+            Chicago
+          </h2>
+          <p
+            data-testid="hero-description"
+          >
+            We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
+          </p>
+          <button
+            class="reserve-btn"
+            data-testid="reserve-button"
+          >
+            Reserve a Table
+          </button>
+        </div>
+        <div
+          class="hero-image-wrapper"
+          data-testid="hero-image-wrapper"
+        >
+          <img
+            alt="Chef holding appetizers"
+            data-testid="hero-image"
+            src="restauranfood.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
